@@ -5,5 +5,5 @@ const arrayOfDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday','Thursday','Frid
 let weekDay = new Date().getDay()
 currentDay.innerText = arrayOfDays[weekDay]
 setInterval(()=>{
-    utc.innerText = new Date().getUTCMilliseconds()
+    utc.innerText = new Date().toUTCString()
 },1000)
