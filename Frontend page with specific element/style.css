@@ -6,11 +6,13 @@
 }
 body{
     height: 100%;
+    background-color: beige;
 }
 nav{
     background-color: azure;
     padding: 10px 5px;
     font-style: italic;
+    font-size: 10px;
 }
 div{
     padding: 10px;
@@ -20,7 +22,12 @@ section img{
     object-fit: contain;
     max-width: 400px;
     max-height: 500px;
+    border-radius: 12px;
 }
+[data-testid="slackUserName"]{
+    font-size: 30px;
+}
+
 @media (min-width: 1024px) {
     div, main{
         display: flex;
@@ -31,5 +38,8 @@ section img{
         justify-content: center;
         align-items: center;
         text-align: left;
+    }
+    h5{
+        font-size: 25px;
     }
 }
