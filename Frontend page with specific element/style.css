@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+body{
+    height: 100%;
+}
 nav{
     background-color: azure;
     padding: 10px 5px;
@@ -16,7 +18,8 @@ div{
 section img{
     width: 100%;
     object-fit: contain;
-    max-width: 500px;
+    max-width: 400px;
+    max-height: 500px;
 }
 @media (min-width: 1024px) {
     div, main{
