@@ -33,7 +33,7 @@ section img{
         display: flex;
     }
     main{
-        width: 50%;
+        width: 70%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
