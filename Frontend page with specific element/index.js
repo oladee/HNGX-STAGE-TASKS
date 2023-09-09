@@ -8,7 +8,7 @@ currentDay.innerText = arrayOfDays[weekDay]
 
 
 setInterval(()=> {
-    let currentTime = Date.now()
+    let currentTime = new Date().getTime()
     
-    utc.innerText = currentTime 
-},1000)
+    utc.innerText = currentTime.toString()
+},1)
