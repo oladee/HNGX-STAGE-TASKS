@@ -5,17 +5,10 @@ const arrayOfDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday','Thursday','Frid
 let weekDay = new Date().getDay()
 currentDay.innerText = arrayOfDays[weekDay]
 
-function validUTCDate(date){
-    const hours = String(date.getUTCHours()).padStart(2,'0');
-    const minutes = String(date.getUTCMinutes()).padStart(2,'0');
-    const seconds = String(date.getUTCSeconds()).padStart(2,'0');
-    const milliseconds = String(date.getUTCMilliseconds()).padStart(3,'0');
 
-    return `${hours}:${minutes}:${seconds}:${milliseconds}`
-}
 
 setInterval(()=> {
-    const currentTime = new Date()
+    let currentTime = Date.now()
     
-    utc.innerText = validUTCDate(currentTime)
+    utc.innerText = currentTime
 },1000)
