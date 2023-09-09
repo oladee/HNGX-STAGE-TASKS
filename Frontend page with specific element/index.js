@@ -11,4 +11,4 @@ setInterval(()=> {
     let currentTim = new Date().getTime()
     
     utc.innerText = currentTim.toString()
-},1)
+},1000)
